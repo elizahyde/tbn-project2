@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nurture.us</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="/app/assets/javascripts/custom.modernizr.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Gochi+Hand|Just+Me+Again+Down+Here|Satisfy|Marck+Script' rel='stylesheet' type='text/css'>
+  <%= csrf_meta_tags %>
+
+
+  <div class="contain-to-grid sticky">
+    <nav class="top-bar">
+
+      <ul class="title-area">
+      <!-- Title Area -->
+          <li class="name">
+            <h1><a href="#">Nurture.us </a></h1>
+          </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li class="divider hide-for-small"></li>
+          <li class="has-dropdown"><a href="#">Profile Image</a>
+            <ul class="dropdown">
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+</section>
+    </nav>
+  </div>
+
+</head>
+<body>
+
+<%= yield %>
+<script>
+  document.write('<script src=/app/assets/javascripts/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+
+<script>
+  $(document).foundation();
+</script>
+
+</body>
+</html>

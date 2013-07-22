@@ -1,0 +1,25 @@
+
+.top-bar .name h1 {
+ font-size: 42px;
+ font-family: 'Marck Script', cursive;
+ color: #CBDB23;
+ letter-spacing: 2px;
+ text-shadow: 0px 2px 3px gray;
+}
+
+.top-bar .name h1 a {
+  color: #FF795E;
+}
+
+.contain-to-grid .top-bar   {
+  background: #FAF8F7;
+  margin-bottom: 10px;
+}
+.contain-to-grid {
+  background: #FAF8F7;
+  margin: 0;
+}
+
+.top-bar-section {
+  background: #FF795E;
+}
